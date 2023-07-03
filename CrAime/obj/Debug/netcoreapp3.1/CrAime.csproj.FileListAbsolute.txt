@@ -1,0 +1,10 @@
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\bin\Debug\netcoreapp3.1\CrAime.deps.json
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\bin\Debug\netcoreapp3.1\CrAime.dll
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\bin\Debug\netcoreapp3.1\CrAime.pdb
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\obj\Debug\netcoreapp3.1\CrAime.csproj.AssemblyReference.cache
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\obj\Debug\netcoreapp3.1\CrAime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\obj\Debug\netcoreapp3.1\CrAime.AssemblyInfoInputs.cache
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\obj\Debug\netcoreapp3.1\CrAime.AssemblyInfo.cs
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\obj\Debug\netcoreapp3.1\CrAime.csproj.CoreCompileInputs.cache
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\obj\Debug\netcoreapp3.1\CrAime.dll
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\CrAime\obj\Debug\netcoreapp3.1\CrAime.pdb
