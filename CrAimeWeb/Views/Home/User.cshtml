@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Utilisateurs";
+}
+
+<h1>Exemple de CRUD</h1>
+
+<!-- Formulaire de création -->
+<h2>Créer un nouvel élément</h2>
+<form method="POST" action="/create">
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="text" name="description" placeholder="Description" required>
+    <button type="submit">Créer</button>
+</form>
+
+<!-- Tableau d'affichage des éléments existants -->
+<h2>Liste des éléments</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Boucle pour afficher les éléments existants -->
+        <tr>
+            <td>Nom de l'élément</td>
+            <td>Description de l'élément</td>
+            <td>
+                <a href="/edit?id=1">Modifier</a>
+                <a href="/delete?id=1">Supprimer</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Formulaire de mise à jour -->
+<h2>Modifier un élément</h2>
+<form method="POST" action="/update">
+    <input type="hidden" name="id" value="1">
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="text" name="description" placeholder="Description" required>
+    <button type="submit">Modifier</button>
+</form>
+
+<!-- Formulaire de suppression -->
+<h2>Supprimer un élément</h2>
+<form method="POST" action="/delete">
+    <input type="hidden" name="id" value="1">
+    <button type="submit">Supprimer</button>
+</form>

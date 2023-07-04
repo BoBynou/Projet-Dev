@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient;
 
 namespace CrAime
 {
-    class Regle
+    public class Regle
     {
         public int Id { get; set; }
         public string Description { get; set; }

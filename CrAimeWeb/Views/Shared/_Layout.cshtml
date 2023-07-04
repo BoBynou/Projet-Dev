@@ -9,29 +9,49 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CrAimeWeb</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CrAime</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="User">Utilisateurs</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+</header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <button onclick="getUsers()">getUsers</button>
+            <button onclick="getUser(1)">getUser</button>
+            <button onclick="addUser('test', '1234', 'Lélé', 'lecon', '0302', '0')">AddUser</button>
+            <button onclick="updateUser('2','pastest', '1234', 'Lélé', 'lecon', '0302', '0')">UpdateUser</button>
+            <button onclick="deleteUser('3')">DeleteUser</button>
+            <br/>
+            <button onclick="getAssos()">getAssos</button>
+            <button onclick="getAsso(1)">getAsso</button>
+            <button onclick="addAsso('ASN')">AddAsso</button>
+            <button onclick="updateAsso('2','PLUS NEUVY')">UpdateAsso</button>
+            <button onclick="deleteAsso('3')">DeleteAsso</button>
+            <br/>
+            <button onclick="getPostes()">getPostes</button>
+            <button onclick="getPoste(1)">getPoste</button>
+            <button onclick="addPoste('idk', 'Bon poste')">AddPoste</button>
+            <button onclick="updatePoste('3','Maintenant ik', 'Je sais pas')">UpdatePoste</button>
+            <button onclick="deletePoste('4')">DeletePoste</button>
         </main>
     </div>
 

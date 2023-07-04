@@ -5,7 +5,14 @@ VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrAime", "CrAime.csproj", "{265806AF-5EE7-4FAC-A1D9-34587DD5E668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrAimeWeb", "..\CrAimeWeb\CrAimeWeb.csproj", "{FE37855E-79B4-4DFF-8914-F8F1D4CBB2F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrAimeWeb", "..\CrAimeWeb\CrAimeWeb.csproj", "{FE37855E-79B4-4DFF-8914-F8F1D4CBB2F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{652C0F42-C8F9-4015-9030-99B7D40BEB25}"
+	ProjectSection(SolutionItems) = preProject
+		AssociationViewModel.cs = AssociationViewModel.cs
+		PosteViewModel.cs = PosteViewModel.cs
+		UserViewModel.cs = UserViewModel.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

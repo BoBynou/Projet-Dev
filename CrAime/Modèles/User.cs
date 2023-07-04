@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient;
 
 namespace CrAime
 {
-    class User
+    public class User
     {
         public int Id { get; set; }
         public string Email { get; set; }

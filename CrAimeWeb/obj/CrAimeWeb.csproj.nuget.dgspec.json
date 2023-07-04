@@ -1,17 +1,88 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\CrAimeWeb\\CrAimeWeb.csproj": {}
+    "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAimeWeb\\CrAimeWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\CrAimeWeb\\CrAimeWeb.csproj": {
+    "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAimeWeb\\CrAimeWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\CrAimeWeb\\CrAimeWeb.csproj",
+        "projectUniqueName": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAimeWeb\\CrAimeWeb.csproj",
         "projectName": "CrAimeWeb",
-        "projectPath": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\CrAimeWeb\\CrAimeWeb.csproj",
+        "projectPath": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAimeWeb\\CrAimeWeb.csproj",
         "packagesPath": "C:\\Users\\boblo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\CrAimeWeb\\obj\\",
+        "outputPath": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAimeWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\boblo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAime\\CrAime.csproj": {
+                "projectPath": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAime\\CrAime.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.29, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAime\\CrAime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAime\\CrAime.csproj",
+        "projectName": "CrAime",
+        "projectPath": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAime\\CrAime.csproj",
+        "packagesPath": "C:\\Users\\boblo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\boblo\\OneDrive\\Bureau\\Nouveau dossier\\Projet-Dev\\CrAime\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,9 +115,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+            "MySql.Data": {
               "target": "Package",
-              "version": "[3.1.29, )"
+              "version": "[8.0.33, )"
             }
           },
           "imports": [
@@ -60,9 +131,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

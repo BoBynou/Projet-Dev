@@ -37,7 +37,7 @@ namespace CrAime
         #region OpenConnection
         //open connection to database
         public static bool OpenConnection()
-        {
+        {            
             if (connection is null)
             {
                 Initialize();
@@ -85,6 +85,7 @@ namespace CrAime
                 return false;
             }
         }
-        #endregion
+        #endregion       
     }
+    
 }
