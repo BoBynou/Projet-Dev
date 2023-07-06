@@ -727,3 +727,5 @@ C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\bin\Debug\ne
 C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Stock.cshtml.g.cs
 C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Evenement.cshtml.g.cs
 C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partenaire.cshtml.g.cs
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\bin\Debug\netcoreapp3.1\package.json

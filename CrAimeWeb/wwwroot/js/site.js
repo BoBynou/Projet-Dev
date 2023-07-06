@@ -1,23 +1,23 @@
 ﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
-// Write your JavaScript code.
 
+
+// Write your JavaScript code.
 function getUsers() {
-    fetch('/api/users')
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
-        .catch(error => {console.error('Erreur lors de la requête :', error);
-        })
+    return axios.get('/api/users')
+        .catch(error => {
+            console.error('Erreur lors de la requête :', error);
+            throw error;
+        });
 }
 
 function getUser(id) {
-    fetch(`/api/users/${id}`)
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
+    return axios.get(`/api/users/${id}`)
         .catch(error => {
             console.error('Erreur lors de la requête :', error);
-        })
+            throw error;
+        });
 }
 
 function addUser(email, password, firstname, lastname, phonenumber, isadmin) {
@@ -355,18 +355,14 @@ function deletePoste(id) {
 
 
 function getEvents() {
-    fetch('/api/evenements')
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
+    return axios.get('/api/evenements')
         .catch(error => {
             console.error('Erreur lors de la requête :', error);
         })
 }
 
 function getEvent(id) {
-    fetch(`/api/evenements/${id}`)
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
+    return axios.get(`/api/evenements/${id}`)
         .catch(error => {
             console.error('Erreur lors de la requête :', error);
         })
