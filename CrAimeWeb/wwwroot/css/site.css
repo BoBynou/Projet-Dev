@@ -1,65 +1,9 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-/* Provide sufficient contrast against white background */
-/*body{
-    margin: 0;
-}
-.main-container{
-    display: flex;
-}
-
-.navbar {
-    width: 200px;
-    height: 100vh;
-    background-color: rgba(181, 88, 144, 0.19);
-    position: sticky;
-    left: 0;
-    top: 0;
-    padding: 0;
-}
-
-    .navbar ul {
-        height: 100%;
-        width: 100%;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        margin-top: auto;
-    }
-
-        .navbar ul li {           
-            width: 100%;
-            padding-bottom: 20%;
-            padding-top: 5%;
-            display: flex;
-            border-bottom: 2px solid #B55890;
-        }
-
-            .navbar ul li a{
-                width: 100%;
-            }
-
-            li.logout {
-                position: absolute;
-                bottom: 0;
-                border-bottom: none;
-            }
-
-        .navbar a:hover {
-            background-color: #555;
-        }*/
-
-
-/* CUSTOM STUFF */
-
-body {
+﻿body {
     display: flex;
     font-family: Inter, sans-serif;
     max-height: 100dvh;
     margin: 0;
+
 }
 
 h2 {
@@ -72,6 +16,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
     min-width: 20rem;
     height: 100dvh;
     border-right: 2px solid #B55890;
@@ -87,7 +32,6 @@ h2 {
     user-select: none;
     padding: 1rem 0;
 }
-
 .menubar svg {
     width: 3rem;
     color: #B55890;
@@ -116,13 +60,13 @@ h2 {
     align-items: center;
 }
 
-    .menubar .profile * {
-        color: black;
-    }
+.menubar .profile * {
+    color: black;
+}
 
-    .menubar .profile:hover * {
-        color: #363636;
-    }
+.menubar .profile:hover * {
+    color: #363636;
+}
 
 .page-content {
     padding: 3rem;
@@ -130,9 +74,9 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "event event event"
-        "members partners partners"
-        "members stocks stocks";
+    "event event event"
+    "members partners partners"
+    "members stocks stocks";
     flex: 1;
     gap: 1rem;
     max-height: 100dvh;
@@ -151,12 +95,12 @@ h2 {
     gap: 5rem;
 }
 
-    .card-event .card-event-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        gap: 2rem;
-    }
+.card-event .card-event-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+}
 
 .card-event-content * {
     margin: 0;
@@ -171,44 +115,21 @@ h2 {
     grid-area: members;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-
 .card-partners {
     grid-area: partners;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .card-stocks {
     grid-area: stocks;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.member-graph-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    width: 100%;
-}
-
-    .member-graph-group p {
-        margin: 0;
-    }
-
-.member-graph {
-    width: 13rem;
-    height: 13rem;
-    background-color: white;
-    border-radius: 50%;
 }
 
 .stocks-graph {
