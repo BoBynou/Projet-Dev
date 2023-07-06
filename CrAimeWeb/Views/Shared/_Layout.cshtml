@@ -57,7 +57,7 @@
         <div class="container">
             <main role="main" class="pb-3">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                @RenderBody()
+                
                 <button onclick="getUsers()">getUsers</button>
                 <button onclick="getUser(1)">getUser</button>
                 <button onclick="addUser('test', '1234', 'Lélé', 'lecon', '0302', '0')">AddUser</button>
@@ -113,34 +113,33 @@
     
 @*</body>*@
 <body>
-
     <section class="menubar">
         <div class="menubar-tabs">
-            <a href="#" class="menubar-tab">
+            <a class="menubar-tab" asp-area="" asp-controller="Home" asp-action="Index">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
                 </svg>
                 <p>Dashboard</p>
             </a>
-            <a href="#" class="menubar-tab">
+            <a class="menubar-tab" asp-area="" asp-controller="Home" asp-action="User">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                 </svg>
                 <p>Membres</p>
             </a>
-            <a href="#" class="menubar-tab">
+            <a class="menubar-tab" asp-area="" asp-controller="Home" asp-action="Partenaire">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z" />
                 </svg>
                 <p>Partenaires</p>
             </a>
-            <a href="#" class="menubar-tab">
+            <a class="menubar-tab" asp-area="" asp-controller="Home" asp-action="Evenement">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
                 </svg>
                 <p>Évènements</p>
             </a>
-            <a href="#" class="menubar-tab">
+            <a class="menubar-tab" asp-area="" asp-controller="Home" asp-action="Stock">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                 </svg>
@@ -155,38 +154,7 @@
             <a href="#">Logout</a>
         </div>
     </section>
-
-    <section class="page-content">
-        <div class="card card-event">
-            <img src="img/img-events-card.jpg" alt="featured event image">
-
-            <div class="card-event-content">
-                <h2>Évènements</h2>
-                <h3>Un dinosaure est de sortie !!!</h3>
-                <p>Oui le jurassic patk fnzeojfnzefjnzkfjnzekfjnzekfjnzefkjeznfkzjenf</p>
-            </div>
-        </div>
-
-        <div class="card card-members">
-            <div class="member-graph-group">
-                <div class="member-graph"></div>
-                <p>Membres</p>
-            </div>
-            <div class="member-graph-group">
-                <div class="member-graph"></div>
-                <p>Membres</p>
-            </div>
-        </div>
-
-        <div class="card card-partners">
-            <h2>Partenaires</h2>
-        </div>
-
-        <div class="card card-stocks">
-            <h2>Stocks</h2>
-            <div class="stocks-graph"></div>
-        </div>
-    </section>
+    @RenderBody()
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

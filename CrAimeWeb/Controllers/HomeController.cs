@@ -33,6 +33,19 @@ namespace CrAimeWeb.Controllers
             return View();
         }
 
+        public IActionResult Stock()
+        {
+            return View();
+        }
+        public IActionResult Partenaire()
+        {
+            return View();
+        }
+        public IActionResult Evenement()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

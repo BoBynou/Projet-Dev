@@ -724,3 +724,6 @@ C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\bin\Debug\ne
 C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\bin\Debug\netcoreapp3.1\CrAime.dll
 C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\bin\Debug\netcoreapp3.1\CrAime.pdb
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Stock.cshtml.g.cs
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Evenement.cshtml.g.cs
+C:\Users\boblo\OneDrive\Bureau\Nouveau dossier\Projet-Dev\CrAimeWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partenaire.cshtml.g.cs
