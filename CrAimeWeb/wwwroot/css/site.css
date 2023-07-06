@@ -2,64 +2,218 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 /* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+/*body{
+    margin: 0;
+}
+.main-container{
+    display: flex;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.navbar {
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(181, 88, 144, 0.19);
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 0;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+    .navbar ul {
+        height: 100%;
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+        .navbar ul li {           
+            width: 100%;
+            padding-bottom: 20%;
+            padding-top: 5%;
+            display: flex;
+            border-bottom: 2px solid #B55890;
+        }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
+            .navbar ul li a{
+                width: 100%;
+            }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
+            li.logout {
+                position: absolute;
+                bottom: 0;
+                border-bottom: none;
+            }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
+        .navbar a:hover {
+            background-color: #555;
+        }*/
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
+
+/* CUSTOM STUFF */
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    display: flex;
+    font-family: Inter, sans-serif;
+    max-height: 100dvh;
+    margin: 0;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menubar {
+    background-color: #B5589030;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 20rem;
+    height: 100dvh;
+    border-right: 2px solid #B55890;
+}
+
+.menubar-tab {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 2px solid #B55890;
+    background-color: rgba(181, 88, 144, 0.2);
+    user-select: none;
+    padding: 1rem 0;
+}
+
+.menubar svg {
+    width: 3rem;
+    color: #B55890;
+    padding-left: 2rem;
+}
+
+
+.menubar-tab:hover {
+    background-color: rgba(181, 88, 144, .1) !important;
+}
+
+.menubar p,
+.menubar a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #B55890;
+    text-decoration: none;
+}
+
+.menubar .profile {
+    display: flex;
+    gap: 1rem;
+    padding-left: .5rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+    .menubar .profile * {
+        color: black;
+    }
+
+    .menubar .profile:hover * {
+        color: #363636;
+    }
+
+.page-content {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "event event event"
+        "members partners partners"
+        "members stocks stocks";
+    flex: 1;
+    gap: 1rem;
+    max-height: 100dvh;
+}
+
+
+.card {
+    background-color: rgba(181, 88, 144, 0.2);
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.card-event {
+    grid-area: event;
+    display: flex;
+    gap: 5rem;
+}
+
+    .card-event .card-event-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 2rem;
+    }
+
+.card-event-content * {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-event-content h2 {
+    align-self: center;
+}
+
+.card-members {
+    grid-area: members;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-partners {
+    grid-area: partners;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-stocks {
+    grid-area: stocks;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-graph-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+    .member-graph-group p {
+        margin: 0;
+    }
+
+.member-graph {
+    width: 13rem;
+    height: 13rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.stocks-graph {
+    background-color: white;
+    border: 1px solid #B55890;
+    width: 100%;
+    height: 10rem;
 }

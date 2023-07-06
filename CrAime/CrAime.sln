@@ -10,7 +10,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{652C0F42-C8F9-4015-9030-99B7D40BEB25}"
 	ProjectSection(SolutionItems) = preProject
 		AssociationViewModel.cs = AssociationViewModel.cs
+		EvenementViewModel.cs = EvenementViewModel.cs
+		PartenaireViewModel.cs = PartenaireViewModel.cs
 		PosteViewModel.cs = PosteViewModel.cs
+		RegleViewModel.cs = RegleViewModel.cs
+		StockViewModel.cs = StockViewModel.cs
 		UserViewModel.cs = UserViewModel.cs
 	EndProjectSection
 EndProject
