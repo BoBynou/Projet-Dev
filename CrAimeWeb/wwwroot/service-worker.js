@@ -4,7 +4,17 @@ self.addEventListener("install", event => {
             return cache.addAll([
                 "/",
                 "/css/site.css",
-                "/img/craime-logo.svg"
+                "/img/craime-logo.svg",
+                "/js/Modal.js",
+                "/js/dataEvent.js",
+                "/js/dataPartenaire.js",
+                "/js/dataStock.js",
+                "/js/dataUser.js",
+                "/js/site.js",
+                "/Home/User",
+                "/Home/Partenaire",
+                "/Home/Stock",
+                "/Home/Evenement",
             ]);
         })
     );
