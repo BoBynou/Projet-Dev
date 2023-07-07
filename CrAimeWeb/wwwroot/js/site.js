@@ -4,6 +4,16 @@
 
 
 // Write your JavaScript code.
+
+const api = axios.create({
+    baseURL: "/"
+})
+
+api.interceptors.request.use((config) => {
+    config.headers["Content-Type"] = "application/json";
+    return config;
+})
+
 function getUsers() {
     return axios.get('/api/users')
         .catch(error => {
@@ -353,7 +363,6 @@ function deletePoste(id) {
 
 
 
-
 function getEvents() {
     return axios.get('/api/evenements')
         .catch(error => {
@@ -368,7 +377,12 @@ function getEvent(id) {
         })
 }
 
-function addEvent(title, type, description, start_date, end_date) {
+async function addEvent() {
+    const title = document.getElementById("title").value;
+    const type = document.getElementById("type").value;
+    const description = document.getElementById("description").value;
+    const start_date = document.getElementById("start_date").value;
+    const end_date = document.getElementById("end_date").value;
     var eventData = {
         title: title,
         type: type,
@@ -379,25 +393,11 @@ function addEvent(title, type, description, start_date, end_date) {
 
     // Effectuer la requête POST vers votre API
     console.log(eventData);
-    fetch('/api/evenements', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(eventData)
-    })
-        .then(response => {
-            if (response.ok) {
-                console.log('Event ajouté avec succès.');
-                // Traiter la réponse de réussite si nécessaire
-            } else {
-                console.error('Erreur lors de l\'ajout de l\'utilisateur. Code de statut : ' + response.status);
-                // Traiter la réponse d'erreur si nécessaire
-            }
-        })
+    const res = await api.post('/api/evenements', eventData)
         .catch(error => {
-            console.error('Erreur lors de la requête :', error);
-        });
+            console.error('Erreur lors de l\'ajout de l\'utilisateur. Code de statut : ' + error);
+        })
+        console.log('Event ajouté avec succès.');
 }
 
 function updateEvent(id, title, type, description, start_date, end_date) {
@@ -473,19 +473,15 @@ function deleteEvent(id) {
 
 
 function getPartenaires() {
-    fetch('/api/partenaires')
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
+    return axios.get('/api/partenaires')
         .catch(error => {
             console.error('Erreur lors de la requête :', error);
-        })
+            throw error;
+        });
 }
 
 function getPartenaire(id) {
-    fetch(`/api/partenaires/${id}`)
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
-        .catch(error => {
+    return axios.get(`/api/partenaires/${id}`)        .catch(error => {
             console.error('Erreur lors de la requête :', error);
         })
 }
@@ -701,18 +697,14 @@ function deleteRegle(id) {
 
 
 function getStocks() {
-    fetch('/api/stocks')
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
+    return axios.get('/api/stocks')        
         .catch(error => {
             console.error('Erreur lors de la requête :', error);
         })
 }
 
 function getStock(id) {
-    fetch(`/api/stocks/${id}`)
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
+    return axios.get(`/api/stocks/${id}`)
         .catch(error => {
             console.error('Erreur lors de la requête :', error);
         })

@@ -39,7 +39,7 @@ namespace CrAimeWeb.Controllers
             try
             {
                 Services.AddAnEvent(events.Title, events.Type, events.Description, events.Start_date, events.End_date);
-                return Ok("allgood");
+                return Ok();
             }
             catch (Exception ex)
             {

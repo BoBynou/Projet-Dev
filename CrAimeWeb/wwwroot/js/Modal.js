@@ -1,6 +1,6 @@
 ﻿// Get the modal
-var createModal = document.getElementById("eventCreateModal");
-var editModal = document.getElementById("eventEditModal");
+var createModal = document.getElementById("createModal");
+var editModal = document.getElementById("editModal");
 
 // Get the button that opens the modal
 var addButton = document.querySelector(".add-button");
