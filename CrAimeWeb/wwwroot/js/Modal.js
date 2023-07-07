@@ -1,11 +1,11 @@
 ﻿// Get the modal
+debugger;
 var createModal = document.getElementById("createModal");
 var editModal = document.getElementById("editModal");
 
 // Get the button that opens the modal
 var addButton = document.querySelector(".add-button");
 var editButtons = document.querySelectorAll(".edit-button");
-
 // Get the <span> element that closes the modal
 var spans = document.querySelectorAll(".close");
 
@@ -16,6 +16,8 @@ addButton.onclick = function () {
 
 // When the user clicks the button, open the modal
 editButtons.forEach(function (editButton) {
+    console.log("cc");
+
     editButton.onclick = function () {
         editModal.style.display = "flex";
     }

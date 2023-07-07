@@ -30,7 +30,13 @@ function getUser(id) {
         });
 }
 
-function addUser(email, password, firstname, lastname, phonenumber, isadmin) {
+function addUser() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const firstname = document.getElementById("description").value;
+    const lastname = document.getElementById("start_date").value;
+    const phonenumber = document.getElementById("end_date").value;
+    const isadmin = document.getElementById("isadmin").value;
     var userData = {
         email: email,
         password: password,
@@ -481,12 +487,17 @@ function getPartenaires() {
 }
 
 function getPartenaire(id) {
-    return axios.get(`/api/partenaires/${id}`)        .catch(error => {
+    return axios.get(`/api/partenaires/${id}`)
+        .catch(error => {
             console.error('Erreur lors de la requête :', error);
         })
 }
 
-function addPartenaire(name, type, contact_phone, contact_email) {
+async function addPartenaire() {
+    const name = document.getElementById("name").value;
+    const type = document.getElementById("type").value;
+    const contact_phone = document.getElementById("phone").value;
+    const contact_email = document.getElementById("email").value;
     var partenaireData = {
         name: name,
         type: type,
@@ -496,26 +507,13 @@ function addPartenaire(name, type, contact_phone, contact_email) {
 
     // Effectuer la requête POST vers votre API
     console.log(partenaireData);
-    fetch('/api/partenaires', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(partenaireData)
-    })
-        .then(response => {
-            if (response.ok) {
-                console.log('Partenaire ajouté avec succès.');
-                // Traiter la réponse de réussite si nécessaire
-            } else {
-                console.error('Erreur lors de l\'ajout de l\'utilisateur. Code de statut : ' + response.status);
-                // Traiter la réponse d'erreur si nécessaire
-            }
-        })
+    const res = await api.post('/api/partenaires', partenaireData)
         .catch(error => {
-            console.error('Erreur lors de la requête :', error);
-        });
+            console.error('Erreur lors de l\'ajout de l\'utilisateur. Code de statut : ' + error);
+        })
+    console.log('Event ajouté avec succès.');
 }
+
 
 function updatePartenaire(id, name, type, contact_phone, contact_email) {
     var partenaireData = {
