@@ -1,4 +1,5 @@
 ﻿// Get the modal
+debugger;
 var createModal = document.getElementById("createModal");
 var modals = document.querySelectorAll(".modal");
 var editModal = document.getElementById("editModal");
