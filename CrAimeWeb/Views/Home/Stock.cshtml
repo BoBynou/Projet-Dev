@@ -1,8 +1,103 @@
 ﻿@{
     ViewData["Title"] = "Stock";
 }
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<button onclick="peut()">yo</button>
-<div id="cecitest"></div>
-<script src="~/js/site.js" asp-append-version="true"></script>
-<script src="~/js/Afficherdonnées.js" asp-append-version="true"></script>
+
+<section class="page-content page-event">
+    <div class="title-group">
+        <h1>Stocks</h1>
+        <img src="~/img/craime-logo.svg" alt="Logo CRAime">
+    </div>
+
+    <button class="add-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6">
+            <defs>
+                <mask id="plusMask">
+                    <rect width="100%" height="100%" fill="white" />
+                    <path stroke-width="1.5" d="M12 9v6m3-3H9" fill="black" stroke="black" />
+                </mask>
+            </defs>
+            <circle cx="12" cy="12" r="9" fill="currentColor" mask="url(#plusMask)" />
+        </svg>
+
+        <p>ajouter</p>
+    </button>
+
+    <table class="event-table">
+        <thead>
+        <th>Nom</th>
+        <th>Quantité</th>
+        <th>Quantité max</th>
+        <th>Unité de mesure</th>
+        </thead>
+        <tbody id="cecitest">
+        </tbody>
+    </table>
+
+    <!-- MODAL CREER-->
+    <div id="createModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Créer un évènement</h2>
+            <form action="post" class="event-form">
+                <div class="form-group">
+                    <label for="prenom" class="form-label">prénom</label>
+                    <input type="text" class="form-input" id="prenom">
+                </div>
+                <div class="form-group">
+                    <label for="nom" class="form-label">nom</label>
+                    <input type="text" class="form-input" id="nom">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">email</label>
+                    <input type="text" class="form-input" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="end_date" class="form-label">Date de fin</label>
+                    <input type="text" class="form-input" id="end_date">
+                </div>
+                <div class="form-group form-group-xl">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="textarea" class="form-input" id="description">
+                </div>
+                <button class="form-input form-button">Créer</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL MODIFIER-->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Créer un évènement</h2>
+            <form action="post" class="event-form">
+                <div class="form-group">
+                    <label for="prenom" class="form-label">prénom</label>
+                    <input type="text" class="form-input" id="prenom">
+                </div>
+                <div class="form-group">
+                    <label for="nom" class="form-label">nom</label>
+                    <input type="text" class="form-input" id="nom">
+                </div>
+                <div class="form-group">
+                    <label for="tel" class="form-label">téléphone</label>
+                    <input type="text" class="form-input" id="tel">
+                </div>
+                <div class="form-group">
+                    <label for="admin" class="form-label">
+                        admin/label>
+                        <input type="text" class="form-input" id="admin">
+                </div>
+                <div class="form-group form-group-xl">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="textarea" class="form-input" id="description">
+                </div>
+                <button class="form-input form-button">Créer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script src="~/js/dataStock.js" asp-append-version="true"></script>
+    <script src="~/js/Modal.js" asp-append-version="true"></script>
+}
