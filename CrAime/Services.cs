@@ -662,7 +662,7 @@ namespace CrAime
                 List<Partenaire> partenaires = new List<Partenaire>();
                 if (CRMDatabase.OpenConnection() == true)
                 {
-                    string query = "SELECT * FROM Partenire WHERE Status = 0";
+                    string query = "SELECT * FROM Partenaire WHERE Status = 0";
 
                     using (MySqlCommand command = new MySqlCommand(query, CRMDatabase.connection))
                     using (MySqlDataReader reader = command.ExecuteReader())
@@ -706,7 +706,7 @@ namespace CrAime
             {
                 if (CRMDatabase.OpenConnection() == true)
                 {
-                    string query = "INSERT INTO Partenire (Name, Type, Contact_phone, Contact_email, Date_ajout, Status) VALUES (@Name, @Type, @Contact_phone, @Contact_email, @Date_ajout, @Status)";
+                    string query = "INSERT INTO Partenaire (Name, Type, Contact_phone, Contact_email, Date_ajout, Status) VALUES (@Name, @Type, @Contact_phone, @Contact_email, @Date_ajout, @Status)";
                     using (MySqlCommand command = new MySqlCommand(query, CRMDatabase.connection))
                     {
                         command.Parameters.AddWithValue("@Name", name);
@@ -733,7 +733,7 @@ namespace CrAime
             {
                 if (CRMDatabase.OpenConnection() == true)
                 {
-                    string query = "SELECT * FROM Partenire WHERE Partner_id = " + id + " AND Status = 0";
+                    string query = "SELECT * FROM Partenaire WHERE Partner_id = " + id + " AND Status = 0";
 
                     int Id = 0;
                     string Name = null;
@@ -777,7 +777,7 @@ namespace CrAime
             {
                 if (CRMDatabase.OpenConnection() == true)
                 {
-                    string query = "UPDATE Partenire SET Name = @Name, Type = @Type, Contact_phone = @Contact_phone, Contact_email = @Contact_email, Status = @Status WHERE Partner_id = @Partner_id";
+                    string query = "UPDATE Partenaire SET Name = @Name, Type = @Type, Contact_phone = @Contact_phone, Contact_email = @Contact_email, Status = @Status WHERE Partner_id = @Partner_id";
                     using (MySqlCommand command = new MySqlCommand(query, CRMDatabase.connection))
                     {
                         command.Parameters.AddWithValue("@Name", name);
@@ -803,7 +803,7 @@ namespace CrAime
             {
                 if (CRMDatabase.OpenConnection() == true)
                 {
-                    string query = "UPDATE Partenire SET Status = @Status WHERE Partner_id = @Partner_id";
+                    string query = "UPDATE Partenaire SET Status = @Status WHERE Partner_id = @Partner_id";
                     using (MySqlCommand command = new MySqlCommand(query, CRMDatabase.connection))
                     {
                         command.Parameters.AddWithValue("@Status", 1);

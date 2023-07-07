@@ -23,6 +23,8 @@ var dataJson = getPartenaires().then(response => {
 
 
     dataContainer.innerHTML = htmlContent;
+
+    setEditButtonsEventListeners();
 });
 
 

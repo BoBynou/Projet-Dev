@@ -21,7 +21,7 @@ namespace CrAime
         private static void Initialize()
         {
             server = "localhost";
-            database = "CRAime";
+            database = "craime";
             uid = "root";
             password = "root";
             string connectionString;
@@ -65,7 +65,7 @@ namespace CrAime
                         Console.WriteLine("Invalid username/password, please try again");
                         break;
                 }
-                return false;
+                throw ex;
             }
         }
         #endregion

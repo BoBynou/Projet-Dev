@@ -23,6 +23,8 @@ var dataJson = getStocks().then(response => {
 
 
     dataContainer.innerHTML = htmlContent;
+
+    setEditButtonsEventListeners();
 });
 
 

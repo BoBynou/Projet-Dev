@@ -22,6 +22,16 @@
 </head>
 <body>
     <section class="menubar">
+        <section class="topbar">
+            <button>
+                <svg class="w-6 h-6 burger" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <img alt="Logo CRAime topbar" src="img/craime-logo.svg">
+        </section>
+        <span class="close">&times;</span>
         <div class="menubar-tabs">
             <a class="menubar-tab" asp-area="" asp-controller="Home" asp-action="Index">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -64,16 +74,16 @@
     </section>
     @RenderBody()
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(function () { console.log('Service Worker Registered'); });
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js"></script>
     @RenderSection("Scripts", required: false)
+    @*<script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function () { console.log('Service Worker Registered'); });
+        }
+    </script>*@
 </body>
 </html>

@@ -23,6 +23,8 @@
         
 
         dataContainer.innerHTML = htmlContent;
+
+        setEditButtonsEventListeners();
     });
 
 
