@@ -1,8 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Evenement";
 }
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
 
 <section class="page-content page-event">
     <div class="title-group">
@@ -36,11 +34,11 @@
     </table>
 
     <!-- MODAL CREER-->
-    <div id="eventCreateModal" class="modal">
+    <div id="createModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Créer un évènement</h2>
-            <form action="post" class="event-form">
+            <form class="event-form">
                 <div class="form-group">
                     <label for="title" class="form-label">titre</label>
                     <input type="text" class="form-input" id="title">
@@ -61,13 +59,13 @@
                     <label for="description" class="form-label">Description</label>
                     <input type="textarea" class="form-input" id="description">
                 </div>
-                <button class="form-input form-button">Créer</button>
+                <button class="form-input form-button" onclick="addEvent()">Créer</button>
             </form>
         </div>
     </div>
 
     <!-- MODAL MODIFIER-->
-    <div id="eventEditModal" class="modal">
+    <div id="editModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Créer un évènement</h2>
@@ -97,5 +95,8 @@
         </div>
     </div>
 </section>
-<script src="~/js/Afficherdonnées.js" asp-append-version="true"></script>
-<script src="~/js/Modal.js" asp-append-version="true"></script>
+
+@section scripts{
+    <script src="~/js/dataEvent.js" asp-append-version="true"></script>
+    <script src="~/js/Modal.js" asp-append-version="true"></script>
+}
