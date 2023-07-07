@@ -475,3 +475,34 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/CrAime/bin/Debug/netcoreapp3.1/CrAime.dll
+/.gitignore
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAime.dll
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAime.pdb
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAimeWeb.dll
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAimeWeb.exe
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAimeWeb.runtimeconfig.dev.json
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAimeWeb.pdb
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAimeWeb.Views.dll
+/CrAimeWeb/bin/Debug/netcoreapp3.1/package-lock.json
+/CrAimeWeb/bin/Debug/netcoreapp3.1/CrAimeWeb.Views.pdb
+/CrAimeWeb/bin/Debug/netcoreapp3.1/package.json
+/CrAime/bin/Debug/netcoreapp3.1/CrAime.pdb
+/CrAimeWeb/obj/Debug/netcoreapp3.1/Razor/Views/Home/Evenement.cshtml.g.cs
+/CrAimeWeb/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/CrAimeWeb/obj/Debug/netcoreapp3.1/Razor/Views/Home/Partenaire.cshtml.g.cs
+/CrAimeWeb/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+/CrAimeWeb/obj/Debug/netcoreapp3.1/Razor/Views/Home/Stock.cshtml.g.cs
+/CrAimeWeb/obj/Debug/netcoreapp3.1/Razor/Views/Home/User.cshtml.g.cs
+/CrAime/obj/CrAime.csproj.nuget.dgspec.json
+/CrAime/obj/CrAime.csproj.nuget.g.props
+/CrAime/obj/CrAime.csproj.nuget.g.targets
+/CrAime/obj/Debug/netcoreapp3.1/CrAime.assets.cache
+/CrAime/obj/Debug/netcoreapp3.1/CrAime.csproj.AssemblyReference.cache
+/CrAime/obj/Debug/netcoreapp3.1/CrAime.csproj.CoreCompileInputs.cache
+/CrAime/obj/Debug/netcoreapp3.1/CrAime.csproj.FileListAbsolute.txt
+/CrAime/obj/Debug/netcoreapp3.1/CrAime.dll
+/CrAime/obj/Debug/netcoreapp3.1/CrAime.GeneratedMSBuildEditorConfig.editorconfig
+/CrAime/obj/Debug/netcoreapp3.1/CrAime.pdb
+/CrAime/obj/project.assets.json
+/CrAime/obj/project.nuget.cache
